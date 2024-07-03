@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adonis Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Adonis Game</h1>
+        <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </header>
+    <main>
+        <section class="game-images">
+            <img src="pics/images.jpg" alt="Adonis Game Image 1">
+            <img src="pics/ss_e7d092610062b5f9e43b43ad060e2c8feb00e415.1920x1080.jpg" alt="Adonis Game Image 2">
+            <img src="pics/capsule_616x353.jpg" alt="Adonis Game Image 3">
+        </section>
+        <section class="trial-section">
+            <p>Try the trial of Adonis! It's new and still in development.</p>
+            <button class="try-trial" onclick="downloadGame()">Try Trial</button>
+        </section>
+    </main>
+    <section class="about-section">
+        <h2>About Adonis</h2>
+        <p>Adonis is a groundbreaking new game that blends adventure and strategy in a unique and captivating way. Currently in development, we invite you to try the trial version and provide feedback to help us improve the experience.</p>
+    </section>
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p>Extract the folder and run the file to test the Adonis game. It's new and still in development!</p>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+            <button class="close-popup-btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
